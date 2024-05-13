@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список мест раскопок</title>
+</head>
+<body>
+    <h1>Список мест раскопок</h1>
+    <ul>
+        {% for site in sites %}
+            <li><a href="./site/?id={{site.id}}">{{site.name}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

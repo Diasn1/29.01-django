@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список артифактов на месте раскопок - "{{site.name}}"</title>
+</head>
+<body>
+    <h1>Список артифактов на месте раскопок - "{{site.name}}"</h1>
+    <ul>
+        {% for artifact in artifacts %}
+            <li>{{artifact.name}}</li>
+        {% endfor %}
+    </ul>
+    <a href="..", style="font-size: 20px; text-decoration: none;" >Назад</a>
+</body>
+</html>
